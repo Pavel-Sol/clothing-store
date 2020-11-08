@@ -1,0 +1,207 @@
+@media screen and (max-width: 992px) {
+    /* body */
+    body.lock {
+        overflow: hidden;
+      }
+    /* logo */
+    .header__logo {
+        flex: 0 0 200px;
+    }
+
+    /* бургер */
+    .header__burger{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+     }
+
+     .header__burger::before,
+     .header__burger::after {
+         content: '';
+         position: absolute;
+         width: 100%;
+         height: 2px;
+         left: 0;
+         background-color:  #f5efef;
+         transition: all 0.3s ease 0s;
+     }
+
+     .header__burger::before {
+         top: 0;
+     }
+     .header__burger::after {
+         bottom: 0;
+     }
+     .header__burger span {
+         position: absolute;
+         width: 100%;
+         height: 2px;
+         left: 0;
+         top: 9px;
+         background-color:  #f5efef;
+         transition: all 0.3s ease 0s;
+     }
+     .header__burger.active span {
+         display: none;
+     }
+     .header__burger.active::before {
+         transform: rotate(45deg);
+         top: 9px;
+     }
+     .header__burger.active::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+/* меню */
+     .header__menu {
+         position: fixed;
+         width: 100%;
+         height: 100%;
+         left: -100%;
+         top: 0;
+         background-color: rgb(36, 30, 43);
+         padding: 100px 0px 0px 0px;
+         transition: all 0.5s ease 0s;
+         overflow: auto; 
+     }
+     .header__menu.active {
+        left: 0;
+     }
+
+     .header__list {
+         display: block;
+     }
+
+     .header__list li {
+        padding: 10px 0px 10px 60px;
+     }
+     .header__list li a {
+         font-size: 30px;
+     }
+     .header__list li a:hover {
+        text-decoration: none;
+     }
+     .header__list li:not(:last-child):before {
+         display: none;
+         
+     }
+}
+
+@media screen and (max-width: 768px) {
+    .slider__big {
+        padding: 0px 15px;
+    }
+    .slider__desc {
+        padding: 177px 0px 50px 0px;
+    }
+    .slider_title {
+        font-size: 50px;
+    }
+    .slider__text {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .card {
+        width: 47%;
+    }
+    
+    .footer__menu__list {
+        display: none;
+    }
+    .footer__menu__list.active {
+        display: block;
+    }
+    .footer__menu__title:after {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 2px;
+        background-color: #f5efef;
+        top: 12px;
+        right: 10px;
+        transform: rotate(45deg);
+        transition: all 0.3s ease 0s;
+    }
+    .footer__menu__title.active:after{
+        transform: rotate(-45deg);
+    }
+    .footer__menu__title:before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 2px;
+        background-color: #f5efef;
+        top: 12px;
+        right: 0px;
+        transform: rotate(-45deg);
+        transition: all 0.3s ease 0s;
+    }
+    .footer__menu__title.active:before{
+        transform: rotate(45deg);
+    }
+    .footer__menu__wrap {
+        display: block;
+    }
+    .footer__menu {
+        width: 200px;
+    }
+    .footer__menu__title {
+        display: block;
+        width: 170px;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 650px) {
+      .slider__mini__body .slick-arrow.slick-next {
+        right: -10px;
+      }
+      .slider__pic {
+          width: 65%;
+      }
+      .slider_title {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .slider__item {
+        flex-wrap: wrap;
+      }
+    .slider__pic {
+        width: 170px;
+        padding: 110px 0px 10px 0px;
+        margin: 0px auto;
+    }
+    .slider__desc {
+        padding: 0px;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    .slider_title {
+        max-width: 100%;
+        font-size: 35px;
+    }
+    .slider__text {
+        max-width: 100%;
+        line-height: 17px;
+    }
+    .slider__desc__button {
+        margin: 0px auto 0px auto;
+        margin-bottom: 80px;
+
+    }
+    .slider__mini__body .slick-arrow.slick-prev {
+        left: -17px;
+      }
+}
+
+@media screen and (max-width: 450px) {
+    .card {
+        width: 75%;
+        margin: 50px auto 0px auto;
+    }
+}

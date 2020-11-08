@@ -1,0 +1,464 @@
+/* ------------ОБНУЛЕНИЕ-------- */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 1;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ul li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+/* ------------ Шрифты -------------- */
+@font-face {
+  font-family: 'Bebas';
+  src: url('../fonts/BebasNeueRegular.eot');
+  src: url('../fonts/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/BebasNeueRegular.woff') format('woff'),
+  url('../fonts/BebasNeueRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'BebasBold';
+    src: url('../fonts/BebasNeueBold.eot');
+    src: url('../fonts/BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BebasNeueBold.woff') format('woff'),
+    url('../fonts/BebasNeueBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'OpenSans';
+      src: url('../fonts/OpenSans-Regular.eot');
+      src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/OpenSans-Regular.woff') format('woff'),
+      url('../fonts/OpenSans-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      }
+
+/* ----------- Общие стили --------------- */
+.container {
+  max-width: 1024px;
+  margin: 0px auto;
+}
+
+body {
+  font-family: Bebas;
+}
+
+.basic__title {
+  font-size: 27px;
+  color: #afafaf;
+  text-transform: uppercase;
+  font-family: BebasBold;
+}
+
+.basic__button {
+  text-transform: uppercase;
+  font-size: 19px;
+  padding: 6px 11px;
+  border-radius: 3px;
+  background-color: #3cc395;
+  color: #f5efef;
+  font-family: BebasBold;
+}
+
+/* ----------- header --------------- */
+.header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #4ccfc1;
+  z-index: 2;
+}
+
+.header__body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 20px;
+}
+/* logo */
+.header__logo {
+  flex: 0 0 270px;
+  z-index: 3;
+}
+.header__logo img {
+  width: 100%;
+}
+/* бургер */
+.header__burger{
+   display: none;
+}
+/* меню */
+.header__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 3;
+}
+.header__list li {
+  position: relative;
+  padding: 0px 12px 0px 12px;
+}
+
+.header__list li:not(:last-child):before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #f5efef;
+}
+
+.header a {
+  color: #f5efef;
+  text-transform: uppercase;
+  font-size: 21px;
+  letter-spacing: 1px;
+}
+
+.header a:hover {
+text-decoration: underline;
+}
+
+/* ------------------ slider__big ---------------------- */
+.slider__big {
+  background-color: #40bfb8;
+  color: #f5efef;
+}
+.slider__item {
+  display: flex;
+}
+
+.slider__pic {
+  width: 44%;
+  padding: 157px 0px 50px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.slider__pic img {
+  width: 100%;
+}
+
+
+.slider__desc {
+  padding: 157px 0px 50px 0px;
+  margin: 0px 0px 0px 15px;
+}
+.slider_title {
+  font-size: 61px;
+  margin: 0px 0px 15px 0px;
+  max-width: 310px;
+}
+.slider__text {
+  font-size: 17px;
+  font-family: OpenSans;
+  max-width: 400px;
+  line-height: 28px;
+  margin: 15px 0px;
+}
+
+.slider__desc__button {
+  padding: 7px 0px;
+  text-transform: uppercase;
+  font-size: 27px;
+  font-family: BebasBold;
+  border: 3px solid #f5efef;
+  border-radius: 10px;
+  display: block;
+  width: 137px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* slider__big стили слайдера */
+.slider__big {
+  position: relative;
+}
+.slider__big .slick-list {
+  overflow: hidden;
+}
+.slider__big .slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+
+.slider__big .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -82px;
+}
+
+.slider__big .slick-dots li {
+  margin: 0px 10px;
+}
+
+.slider__big .slick-dots li {
+  margin: 0px 10px;
+}
+
+.slider__big .slick-dots button {
+  font-size: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #f5efef;
+  border-radius: 50%;
+}
+
+.slider__big .slick-dots li.slick-active button {
+  background: #3f9e96;
+  }
+
+  /* ---------------- slider__mini ---------------------- */
+.slider__mini__body {
+  width: 90%;
+  margin: 0px auto;
+}
+.slider__mini__item {
+  display: flex;
+  width: 33%;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+
+.slider__mini__item__img img {
+  width: 100%;
+}
+
+.slider__mini__item__desc {
+  width: 50%;
+  padding: 10px 0px 0px 0px;
+}
+
+
+
+
+
+  /* slider__mini__body стили слайдера */
+
+.slider__mini__body {
+  position: relative;
+}
+
+.slider__mini__body .slick-list {
+  overflow: hidden;
+}
+
+.slider__mini__body .slick-track {
+  display: flex;
+}
+.slider__mini__body .slick-arrow {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  margin-top: -44px;
+  width: 40px;
+  height: 88px;
+  font-size: 0;
+  background-color: #ffffff;
+}
+.slider__mini__body .slick-arrow.slick-prev {
+  left: -30px;
+}
+.slider__mini__body .slick-arrow.slick-prev:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 27px;
+  width: 45px;
+  height: 5px;
+  background-color: #afafaf;
+  transform: rotate(-45deg);
+}
+.slider__mini__body .slick-arrow.slick-prev::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 27px;
+  width: 45px;
+  height: 5px;
+  background-color: #afafaf;
+  transform: rotate(45deg);
+}
+
+.slider__mini__body .slick-arrow.slick-next {
+  right: -25px;
+}
+.slider__mini__body .slick-arrow.slick-next:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 27px;
+  width: 45px;
+  height: 5px;
+  background-color: #afafaf;
+  transform: rotate(45deg);
+}
+.slider__mini__body .slick-arrow.slick-next:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 27px;
+  width: 45px;
+  height: 5px;
+  background-color: #afafaf;
+  transform: rotate(-45deg);
+}
+
+/* -----------cards--------------- */
+.cards__title__wrap {
+  background-color: #39c9b6;
+  padding: 20px 0px;
+}
+.cards__title {
+  font-size: 31px;
+  font-family: BebasBold;
+  color: #f5efef;
+  text-transform: uppercase;
+  padding-left: 67px;
+  display: inline;
+}
+
+.cards__wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0px 15px 35px 15px;
+}
+
+.card {
+  width: 30%;
+  height: 250px;
+  border: 2px solid #c6c6c6;
+  border-bottom: 6px solid #3cc395;
+  margin: 50px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px 0px 0px 0px;
+}
+.card picture {
+  flex: 1 1 auto;
+}
+.card__buy {
+  display: flex;
+  align-items: center;
+  max-width: 180px;
+  margin: 10px auto;
+}
+.card__buy__price {
+  margin: 0px 10px 0px 0px;
+}
+/* -----------footer--------------- */
+.footer {
+  background-color: #39c9b6;
+  padding: 33px 15px;
+  color: #f5efef;
+}
+
+.footer__menu__wrap {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.footer__menu__title {
+  font-family: BebasBold;
+  font-size: 27px;
+  position: relative;
+  display: inline;
+  padding-right: 30px;
+}
+
+.footer__menu__list li a {
+  color: #f5efef;
+  font-family: OpenSans;
+  font-size: 15px;
+  line-height: 35px;
+}
+
+.footer__autor {
+  background-color: #2da89b;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: OpenSans;
+  color: #ffffff;
+}
+/* -------------------------- */
+
+
