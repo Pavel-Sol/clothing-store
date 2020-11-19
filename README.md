@@ -3,7 +3,7 @@
 # Clothing-store web-page  :shirt:
 
 какой-то текст  
-
+---------------
 какой-то текст
 
 ![](https://img.shields.io/badge/-<html5>-<red>)
