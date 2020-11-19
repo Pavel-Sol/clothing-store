@@ -2,11 +2,11 @@
 
 # Clothing-store web-page  :shirt:
 
-заголовок1 
+Github pages: 
 ---------------
-описание  описание  описание описание 
+![](https://pavel-sol.github.io/clothing-store/)
 
-заголовок12
+about the project
 ---------------
 описание  описание  описание описание описание  описание  описание описание 
 
