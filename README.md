@@ -1,4 +1,4 @@
-
+[En](https://github.com/Pavel-Sol/clothing-store/blob/master/README.md) | [Ru](https://github.com/Pavel-Sol/clothing-store/blob/master/README-RU.md)
 
 # Clothing-store web-page  :shirt:
 
