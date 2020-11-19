@@ -4,7 +4,7 @@
 
 Github pages: 
 ---------------
-[](https://pavel-sol.github.io/clothing-store/)
+[https://pavel-sol.github.io/clothing-store/](https://pavel-sol.github.io/clothing-store/)
 
 about the project
 ---------------
