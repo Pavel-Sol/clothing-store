@@ -2,9 +2,8 @@
 
 # Clothing-store web-page  :shirt:
 
-Github pages: 
+:point_right: [Github page](https://pavel-sol.github.io/clothing-store/) 
 ---------------
-[https://pavel-sol.github.io/clothing-store/](https://pavel-sol.github.io/clothing-store/)
 
 about the project
 ---------------
