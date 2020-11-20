@@ -5,10 +5,10 @@
 :point_right: [Github page](https://pavel-sol.github.io/clothing-store/) 
 ---------------
 
-## About the project
+About the project
 The project was developed by me in order to train the skills of building responsive websites. The layout is taken from open sources. Site theme: clothing sale
 
-## Used technologies:
+Used technologies:
 -----------------
 - Html5
 - Сss3
